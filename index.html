@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-type" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Northstar</title>
+	<link href="css/fonts.css" type="text/css" rel="stylesheet" media="all" />
+	<link href="css/vendors/arcticmodal.css" type="text/css" rel="stylesheet" media="all" />
+	<link href="css/vendors/fancybox.css" type="text/css" rel="stylesheet" media="all" />
+	<link href="css/vendors/animate.css" type="text/css" rel="stylesheet" media="all" />
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all" />
+	<link href="css/responsive.css" type="text/css" rel="stylesheet" media="all" />
+</head>
+
+
+<body>
+
+	<div id="wrapper">
+
+		<div class="mm-overlay is_hidden"></div>
+		<div class="mm-menu is_hidden">
+			<div class="search">
+				<form method="get" action="/">
+					<input type="text" placeholder="Поиск" value="" name="s" class="search-input" required autocapitalize="off" autocomplete="off" />
+					<button type="submit" class="search-submit"><span>Искать</span></button>
+					<button type="button" class="search-close is_hidden"><span>Закрыть</span></button>
+					<button type="button" class="search-loading is_hidden"><span>Загрузка</span></button>
+				</form>
+			</div>
+			<div class="search-result">
+				<div class="search-result-section" data-search_section="quick">
+					<span class="search-result-title">Быстрые ссылки</span>
+					<div class="search-result-list">
+						<ul>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Отраслевые решения</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="search-result-section" data-search_section="found">
+					<span class="search-result-title">Предложенные варианты</span>
+					<div class="search-result-list">
+						<ul>
+							<li><a href="#">Пресс-центр</a></li>
+							<li><a href="#">Карьера </a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="search-result-section is-empty" data-search_section="empty">
+					<span class="search-result-title">Результатов по вашему запросу не найдено</span>
+				</div>
+			</div>
+			<div class="list">
+				<ul>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Отраслевые решения</a></li>
+					<li><a href="#">Пресс-центр</a></li>
+					<li><a href="#">Карьера </a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="ss-overlay is_hidden display-none"></div>
+		<div class="search-section fixed is_hidden display-none">
+			<div class="search">
+				<form method="get" action="/">
+					<input type="text" placeholder="Поиск" value="" name="s" class="search-input" required autocapitalize="off" autocomplete="off" />
+					<button type="submit" class="search-submit"><span>Искать</span></button>
+					<button type="button" class="search-close"><span>Закрыть</span></button>
+				</form>
+			</div>
+			<div class="search-result">
+				<div class="search-result-section" data-search_section="quick">
+					<span class="search-result-title">Быстрые ссылки</span>
+					<div class="search-result-list">
+						<ul>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Отраслевые решения</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="search-result-section is-empty" data-search_section="found">
+					<span class="search-result-title">Предложенные варианты</span>
+					<div class="search-result-list">
+						<ul>
+							<li><a href="#">Пресс-центр</a></li>
+							<li><a href="#">Карьера</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="search-result-section is-empty" data-search_section="empty">
+					<span class="search-result-title">Результатов по вашему запросу не найдено</span>
+				</div>
+			</div>
+		</div>
+		
+		<header id="header" class="fixed">
+			<div class="container">
+				<div>
+					<div class="logo">
+						<div>
+							<a href="#">
+								<img src="images/img-logo-header.svg" alt="#" />
+							</a>
+						</div>
+					</div>
+					<div class="menu">
+						<div>
+							<div class="menu-mobile">
+								<i class="menu-mobile-icon">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</i>
+							</div>
+							<ul>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Услуги</a></li>
+								<li><a href="#">Отраслевые решения</a></li>
+								<li><a href="#">Пресс-центр</a></li>
+								<li><a href="#">Карьера</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="search">
+						<div>
+							<a href="#search" role="button">
+								<img src="images/search/icon-header-search.svg" alt="Поиск по сайту" class="search-icon" />
+							</a>
+						</div>
+					</div>
+					<div class="account">
+						<div>
+							<a href="#account" role="button">
+								<img src="images/account/icon-header-account.svg" alt="Войти в личный кабинет" class="account-icon" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section id="services">
+			<div class="module-items module-items-col-12">	
+				<div class="module-item">	
+					<div class="module-item-inner">
+						<div>
+							<h2 class="title">Перевозки любых грузов</h2>
+							<p class="description">Мы доставим ваш груз в любую точку<br /> Европы, России и стран СНГ</p>
+							<div class="links">	
+								<div class="link">
+									<a href="#"><span>Подробнее</span></a>
+								</div>
+								<div class="link">
+									<a href="#"><span>Запрос на перевозку</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bg" style="background-image: url(images/blank.gif);"></div>
+					<div class="bg-loader"></div>
+				</div>
+			</div>
+			<div class="module-items module-items-col-6">
+				<div class="module-item">	
+					<div class="module-item-inner">
+						<div>
+							<h2 class="title"><span>Автомобильные</span> грузоперевозки</h2>
+							<p class="description">Мы можем помочь вам перевезти<br /> тяжелый, негабаритный и сложный груз</p>
+							<div class="links">	
+								<div class="link">
+									<a href="#"><span>Подробнее</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bg" style="background-image: url(images/blank.gif);"></div>
+					<div class="bg-loader"></div>
+				</div>
+				<div class="module-item">	
+					<div class="module-item-inner">
+						<div>
+							<h2 class="title"><span>Морские</span> грузоперевозки</h2>
+							<p class="description">Если для вас цена важнее времени,<br /> попробуйте услуги морских грузоперевозок</p>
+							<div class="links">	
+								<div class="link">
+									<a href="#"><span>Подробнее</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bg" style="background-image: url(images/blank.gif);"></div>
+					<div class="bg-loader"></div>
+				</div>
+				<div class="module-item">	
+					<div class="module-item-inner">
+						<div>
+							<h2 class="title"><span>Железнодорожные</span> грузоперевозки</h2>
+							<p class="description">Расстояние не помеха</p>
+							<div class="links">	
+								<div class="link">
+									<a href="#"><span>Подробнее</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bg" data-bg="images/blank.gif"></div>
+					<div class="bg-loader"></div>
+				</div>
+				<div class="module-item">	
+					<div class="module-item-inner">
+						<div>
+							<h2 class="title"><span>Авиа</span> грузоперевозки</h2>
+							<p class="description">Сроки доставки имеет значение для каждого.<br /> Сроки важны и для вашего груза</p>
+							<div class="links">	
+								<div class="link">
+									<a href="#"><span>Подробнее</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bg" data-bg="images/blank.gif"></div>
+					<div class="bg-loader"></div>
+				</div>
+			</div>
+		</section>
+	
+		<section id="industries">
+			<div class="industry-items">
+				<div class="industry-item industry-item-loading">
+					<a href="#">
+						<span class="industry-item-inner">
+							<h3 class="title"><span>Нефтегазовая</span> отрасль</h3>
+						</span>
+					</a>
+					<div class="bg" style="background-image: url(images/industry/industry-item-1-bg.jpg);"></div>
+					<div class="bg-loader"></div>
+				</div>
+				<div class="industry-item industry-item-loading">
+					<a href="#">
+						<span class="industry-item-inner">
+							<h3 class="title"><span>Аэрокосмическая</span> отрасль</h3>
+						</span>
+					</a>
+					<div class="bg" style="background-image: url(images/industry/industry-item-2-bg.jpg);"></div>
+					<div class="bg-loader"></div>
+				</div>
+				<div class="industry-item industry-item-loading">
+					<a href="#">
+						<span class="industry-item-inner">
+							<h3 class="title"><span>Автомобильная</span> промышленность</h3>
+						</span>
+					</a>
+					<div class="bg" style="background-image: url(images/industry/industry-item-3-bg.jpg);"></div>
+					<div class="bg-loader"></div>
+				</div>
+				<div class="industry-item industry-item-loading">
+					<a href="#">
+						<span class="industry-item-inner">
+							<h3 class="title"><span>Химическая</span> отрасль</h3>
+						</span>
+					</a>
+					<div class="bg" style="background-image: url(images/industry/industry-item-4-bg.jpg);"></div>
+					<div class="bg-loader"></div>
+				</div>
+				<div class="industry-item industry-item-loading">
+					<a href="#">
+						<span class="industry-item-inner">
+							<h3 class="title"><span>Промышленная</span> отрасль</h3>
+						</span>
+					</a>
+					<div class="bg" style="background-image: url(images/industry/industry-item-5-bg.jpg);"></div>
+					<div class="bg-loader"></div>
+				</div>
+				<div class="industry-item industry-item-loading">
+					<a href="#">
+						<span class="industry-item-inner">
+							<h3 class="title"><span>Розничная</span> торговля</h3>
+						</span>
+					</a>
+					<div class="bg" style="background-image: url(images/industry/industry-item-6-bg.jpg);"></div>
+					<div class="bg-loader"></div>
+				</div>
+				<div class="industry-item industry-item-loading">
+					<a href="#">
+						<span class="industry-item-inner">
+							<h3 class="title"><span>Энергетическая</span> отрасль</h3>
+						</span>
+					</a>
+					<div class="bg" style="background-image: url(images/industry/industry-item-7-bg.jpg);"></div>
+					<div class="bg-loader"></div>
+				</div>
+				<div class="industry-item industry-item-loading">
+					<a href="#">
+						<span class="industry-item-inner">
+							<h3 class="title"><span>Фармацевтическая</span> отрасль</h3>
+						</span>
+					</a>
+					<div class="bg" style="background-image: url(images/industry/industry-item-8-bg.jpg);"></div>
+					<div class="bg-loader"></div>
+				</div>
+			</div>
+		</section>		
+
+		<section id="about">
+			<div class="module-items module-items-col-6">
+				<div class="module-item module-item_color_white module-item_bg_black">	
+					<div class="module-item-inner">
+						<div>
+							<h2 class="title">Получите быстрый расчет</h2>
+							<p class="description">Наши эксперты готовы помочь. Свяжитесь с нами и мы найдем<br /> правильное решение</p>
+							<div class="btns">	
+								<div class="btn">
+									<a href="#" class="btn-button btn-blue" role="button"><span>Запрос на перевозку</span></a>
+								</div>
+							</div>
+							<div class="links">	
+								<div class="link">
+									<a href="#"><span>Связаться с нами</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="module-item module-item_color_white module-item_bg_blue">	
+					<div class="module-item-inner">
+						<div>
+							<h2 class="title">Инкотермс 2020</h2>
+							<p class="description">Новый Инкотермс вступил в силу с 1 января</p>
+							<div class="links">	
+								<div class="link">
+									<a href="#"><span>Читать статью</span></a>
+								</div>
+								<div class="link">
+									<a href="#"><span>Последнии новости</span></a>
+								</div>
+							</div>
+							<div class="image">
+								<img src="images/icon-icc.svg" alt="#" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer id="footer">
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul>
+						<li><a href="#">Breadcrumb 1</a></li>
+						<li><a href="#">Breadcrumb 2</a></li>
+						<li><span>Breadcrumb 3</span></li>
+					</ul>
+				</div>
+				<div class="menu-columns">
+					<div class="menu-column menu-column-about">
+						<div class="menu-column-list">
+							<span class="menu-column-list-name">
+								<span>О компании Northstar</span>
+								<i class="menu-column-list-more"><span>+</span></i>
+							</span>
+							<ul>
+								<li><a href="#">О нас</a></li>
+								<li><a href="#">Руководство</a></li>
+								<li><a href="#">Отзывы клиентов</a></li>
+								<li><a href="#">Документы</a></li>
+								<li><a href="#">Борьба с коррупцией</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu-column menu-column-services">
+						<div class="menu-column-list">
+							<span class="menu-column-list-name">
+								<span>Наши услуги</span>
+								<i class="menu-column-list-more"><span>+</span></i>
+							</span>
+							<ul>
+								<li><a href="#">Автомобильные</a></li>
+								<li><a href="#">Морские</a></li>
+								<li><a href="#">Железнодорожные</a></li>
+								<li><a href="#">Авиа</a></li>
+								<li><a href="#">Мультимодальные</a></li>
+								<li><a href="#">Складские услуги</a></li>
+								<li><a href="#">Таможеные услуги</a></li>
+								<li><a href="#">Контрактная логистика</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu-column menu-column-industries">
+						<div class="menu-column-list">
+							<span class="menu-column-list-name">
+								<span>Отраслевые решения</span>
+								<i class="menu-column-list-more"><span>+</span></i>
+							</span>
+							<ul>
+								<li><a href="#">Нефтегазовая отрасль</a></li>
+								<li><a href="#">Аэрокосмическая отрасль</a></li>
+								<li><a href="#">Автомобильная отрасль</a></li>
+								<li><a href="#">Химическая отрасль</a></li>
+								<li><a href="#">Машиностроительная отрасль</a></li>
+								<li><a href="#">Розничная торговля</a></li>
+								<li><a href="#">Энергетическая отрасль</a></li>
+								<li><a href="#">Фармацевтическая отрасль</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu-column menu-column-news">
+						<div class="menu-column-list">
+							<span class="menu-column-list-name">
+								<span>Пресс-центр</span>
+								<i class="menu-column-list-more"><span>+</span></i>
+							</span>
+							<ul>
+								<li><a href="#">Новости компании</a></li>
+								<li><a href="#">Новости рынка</a></li>
+								<li><a href="#">Реализованные проекты</a></li>
+							</ul>
+						</div>
+						<div class="menu-column-list">
+							<span class="menu-column-list-name">
+								<span>Карьера</span>
+								<i class="menu-column-list-more"><span>+</span></i>
+							</span>
+							<ul>
+								<li><a href="#">Вакансии</a></li>
+								<li><a href="#">Стажировка</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu-column menu-column-contacts">
+						<div class="menu-column-list">
+							<span class="menu-column-list-name">
+								<span>Контакты</span>
+								<i class="menu-column-list-more"><span>+</span></i>
+							</span>
+							<ul>
+								<li><a href="#">Контактная информация</a></li>
+								<li><a href="#">Связаться с нами</a></li>
+							</ul>
+						</div>
+						<div class="menu-column-list menu-column-list-blue">
+							<span class="menu-column-list-name">
+								<span>Связаться с нами</span>
+								<i class="menu-column-list-more"><span>+</span></i>
+							</span>
+							<ul>
+								<li><a href="tel:88005557778">8 800 555 77 78</a></li>
+								<li><a href="mailto:info@nslogistic.ru">info@nslogistic.ru</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="notice">
+					<p>ООО «Нордстар» <span class="blue">использует файлы «cookie»</span>, с целью персонализации сервисов и повышения удобства пользования веб-сайтом. “Cookie” представляют собой небольшие файлы, содержащие информацию о предыдущих посещениях веб-сайта. Если вы не хотите использовать файлы “cookie”, измените настройки браузера.</p>
+				</div>
+				<div class="info">
+					<div class="copyright">
+						<span class="nowrap">2011 - 2020,</span> <span class="nowrap">ООО «Нордстар»</span>, официальный сайт. Все права защищены.
+					</div>
+					<div class="social">
+						<ul>
+							<li>
+								<a href="#" rel="nofollow" target="_blank">
+									<i class="fb"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" rel="nofollow" target="_blank">
+									<i class="tw"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" rel="nofollow" target="_blank">
+									<i class="yt"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" rel="nofollow" target="_blank">
+									<i class="in"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<!--
+	<div style="display: none;">
+		<div class="box-modal" id="Modal-copyright">
+			<div class="box-modal_close arcticmodal-close"></div>
+			<div class="modal-copyright">
+				<div class="zag">Политика конфиденциальности</div>
+				<p>Администрация данной посадочной страницы (Лэндинг) не может передать или раскрыть информацию предоставленную пользователем (далее Пользователь) при регистрации и использовании функций сайта третьим лицам, кроме случаев, описанных законодательством страны, на территории которой пользователь ведет свою деятельность.</p>
+				<p>Для регистрации на посадочной странице, пользователь обязан внести некоторую персональную информацию. Для проверки предоставленных данных, посадочная страница оставляет за собой право потребовать доказательства идентичности в онлайн или офлайн режимах.</p>
+				<p>Лэндинг прилагает все усилия для сбережения в сохранности личных данных Пользователя. Личная информация может быть раскрыта в случаях, описанных законодательством, либо когда администрация сочтет подобные действия необходимыми для соблюдения юридической процедуры, судебного распоряжения или легального процесса необходимого для работы Пользователя с Лэндингом. В других случаях, ни при каких условиях, информация, которую Пользователь передает Лэндингу, не будет раскрыта третьим лицам.</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	-->
+
+	<!-- Скрипты -->
+	<script type="text/javascript" src="js/vendors/jquery.min.js"></script>
+	<script type="text/javascript" src="js/vendors/jquery.throttle-debounce.min.js"></script>
+	<script type="text/javascript" src="js/vendors/arcticmodal.js"></script>
+	<script type="text/javascript" src="js/vendors/basictable.js"></script>
+	<script type="text/javascript" src="js/vendors/cookie.js"></script>
+	<script type="text/javascript" src="js/vendors/fancybox.js"></script>
+	<script type="text/javascript" src="js/vendors/form.js"></script>
+	<script type="text/javascript" src="js/vendors/lazysizes.js"></script>
+	<script type="text/javascript" src="js/vendors/owl.js"></script>
+	<script type="text/javascript" src="js/vendors/placeholder.js"></script>
+	<script type="text/javascript" src="js/vendors/pushy.js"></script>
+	<script type="text/javascript" src="js/vendors/render.js"></script>
+	<script type="text/javascript" src="js/vendors/hyphen.js"></script>
+	<script type="text/javascript" src="js/vendors/viewport.js"></script>
+	<script type="text/javascript" src="js/vendors/scroll-magic.js"></script>
+	<script type="text/javascript" src="js/vendors.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+</html>

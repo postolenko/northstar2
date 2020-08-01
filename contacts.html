@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-type" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Northstar - Contacts</title>
+	<link href="css/fonts.css" type="text/css" rel="stylesheet" media="all" />
+	<link href="css/vendors/arcticmodal.css" type="text/css" rel="stylesheet" media="all" />
+	<link href="css/vendors/fancybox.css" type="text/css" rel="stylesheet" media="all" />
+	<link href="css/vendors/owl.css" type="text/css" rel="stylesheet" media="all" />
+	<link href="css/vendors/animate.css" type="text/css" rel="stylesheet" media="all" />
+	<link href="css/vendors/tooltipster.css" type="text/css" rel="stylesheet" media="all" />
+	<link href="css/vendors/daterangepicker.css" type="text/css" rel="stylesheet" media="all" />
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all" />
+	<link href="css/responsive.css" type="text/css" rel="stylesheet" media="all" />
+</head>
+
+
+<body class="pContacts">
+
+	<div id="wrapper">
+
+		<div class="mm-overlay is_hidden"></div>
+		<div class="mm-menu is_hidden">
+			<div class="search">
+				<form method="get" action="/">
+					<input type="text" placeholder="Поиск" value="" name="s" class="search-input" required autocapitalize="off" autocomplete="off" />
+					<button type="submit" class="search-submit"><span>Искать</span></button>
+					<button type="button" class="search-close is_hidden"><span>Закрыть</span></button>
+					<button type="button" class="search-loading is_hidden"><span>Загрузка</span></button>
+				</form>
+			</div>
+			<div class="search-result">
+				<div class="search-result-section" data-search_section="quick">
+					<span class="search-result-title">Быстрые ссылки</span>
+					<div class="search-result-list">
+						<ul>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Отраслевые решения</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="search-result-section" data-search_section="found">
+					<span class="search-result-title">Предложенные варианты</span>
+					<div class="search-result-list">
+						<ul>
+							<li><a href="#">Пресс-центр</a></li>
+							<li><a href="#">Карьера </a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="search-result-section is-empty" data-search_section="empty">
+					<span class="search-result-title">Результатов по вашему запросу не найдено</span>
+				</div>
+			</div>
+			<div class="list">
+				<ul>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Услуги</a></li>
+					<li><a href="#">Отраслевые решения</a></li>
+					<li><a href="#">Пресс-центр</a></li>
+					<li><a href="#">Карьера </a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="ss-overlay is_hidden display-none"></div>
+		<div class="search-section fixed is_hidden display-none">
+			<div class="search">
+				<form method="get" action="/">
+					<input type="text" placeholder="Поиск" value="" name="s" class="search-input" required autocapitalize="off" autocomplete="off" />
+					<button type="submit" class="search-submit"><span>Искать</span></button>
+					<button type="button" class="search-close"><span>Закрыть</span></button>
+				</form>
+			</div>
+			<div class="search-result">
+				<div class="search-result-section" data-search_section="quick">
+					<span class="search-result-title">Быстрые ссылки</span>
+					<div class="search-result-list">
+						<ul>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Отраслевые решения</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="search-result-section is-empty" data-search_section="found">
+					<span class="search-result-title">Предложенные варианты</span>
+					<div class="search-result-list">
+						<ul>
+							<li><a href="#">Пресс-центр</a></li>
+							<li><a href="#">Карьера</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="search-result-section is-empty" data-search_section="empty">
+					<span class="search-result-title">Результатов по вашему запросу не найдено</span>
+				</div>
+			</div>
+		</div>
+		
+		<header id="header">
+			<div class="container">
+				<div>
+					<div class="logo">
+						<div>
+							<a href="#">
+								<img src="images/img-logo-header.svg" alt="#" />
+							</a>
+						</div>
+					</div>
+					<div class="menu">
+						<div>
+							<div class="menu-mobile">
+								<i class="menu-mobile-icon">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+								</i>
+							</div>
+							<ul>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Услуги</a></li>
+								<li><a href="#">Отраслевые решения</a></li>
+								<li><a href="#">Пресс-центр</a></li>
+								<li><a href="#">Карьера</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="search">
+						<div>
+							<a href="#search" role="button">
+								<img src="images/search/icon-header-search.svg" alt="Поиск по сайту" class="search-icon" />
+							</a>
+						</div>
+					</div>
+					<div class="account">
+						<div>
+							<a href="#account" role="button">
+								<img src="images/account/icon-header-account.svg" alt="Войти в личный кабинет" class="account-icon" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<header id="subheader" class="sticky">
+			<div class="background"></div>
+			<div class="container">
+				<div class="title">
+					<h1>
+						<a href="#">
+							<span>Контакты</span>
+						</a>
+					</h1>
+				</div>
+				<div class="menu">
+					<div>
+						<ul>
+							<li><a href="#">Контактная информация</a></li>
+							<li><a href="#">Реквизиты</a></li>
+							<li class="menu-btn-blue"><a href="#">Запрос на перевозку</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="menu-mobile-arrow">
+					<i class="menu-mobile-arrow-icon"></i>
+				</div>
+			</div>
+		</header>	
+
+		<section id="page-promo" class="page-promo">
+			<div class="container">
+				<div class="page-promo-text">
+					<div>
+						<h1 class="page-promo-title">Контактная информация</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contacts" class="contacts">
+			<div class="container">
+				<div class="contacts-columns">
+					<div class="contacts-column contacts-column-form">
+						<div class="contacts-form-wrappper">
+							<h2 class="contacts-form-title">Заказать звонок</h2>
+							<div class="contacts-form-notes">Если вы готовы начать, используйте форму ниже и расскажите нам о своем проекте. Мы свяжемся с вами в ближайшее время.</div>
+							<div class="white-form">
+								<form toZaprosPerevozki method="post" novalidate autocomplete="off">
+									<div class="fields-group">
+										<div class="fields-wrap">
+											<div class="field-wrap field-wrap-half field-wrap-first_name">
+												<label for="first_name">Имя*</label>
+												<input type="text" placeholder="Имя*" data-placeholder_blur="Имя*" data-placeholder_focus="Введите ваше имя" value="" name="first_name" id="first_name" required autocapitalize="on" autocomplete="off" />
+												<span class="field-error-text">Введите ваше имя</span>
+											</div>
+											<div class="field-wrap field-wrap-half field-wrap-last_name">
+												<label for="last_name">Фамилия*</label>
+												<input type="text" placeholder="Фамилия*" data-placeholder_blur="Фамилия*" data-placeholder_focus="Введите вашу фамилию" value="" name="last_name" id="last_name" required autocapitalize="off" autocomplete="off" />
+												<span class="field-error-text">Введите вашу фамилию</span>
+											</div>
+										</div>
+									</div>
+									<div class="fields-group">
+										<h4 class="fields-group-title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h4>
+										<div class="fields-wrap">
+											<div class="field-wrap field-wrap-phone">
+												<label for="phone">Телефон*</label>
+												<input type="text" placeholder="Телефон*" data-placeholder_blur="Телефон*" data-placeholder_focus="+7 (___) ___-__-__" value="" name="phone" id="phone" required autocapitalize="off" autocomplete="off" />
+												<span class="field-error-text">Введите ваш телефон</span>
+											</div>
+											<div class="field-wrap field-wrap-autocomplete field-wrap-email">
+												<label for="email">E-mail*</label>
+												<input type="text" placeholder="E-mail*" data-placeholder_blur="E-mail*" data-placeholder_focus="Введите ваш адрес электронной почты" value="" name="email" id="email" required autocapitalize="off" autocomplete="off" />
+												<span class="field-error-text">Введите действительный адрес электронной почты для отправки предложения</span>
+												<div class="autocomplete-items">
+													<ul>
+														<li><span class="option-label"><span></span>@yandex.ru</span></li>
+														<li><span class="option-label"><span></span>@ya.ru</span></li>
+														<li><span class="option-label"><span></span>@mail.ru</span></li>
+														<li><span class="option-label"><span></span>@gmail.com</span></li>
+														<li><span class="option-label"><span></span>@rambler.ru</span></li>
+														<li><span class="option-label"><span></span>@list.ru</span></li>
+														<li><span class="option-label"><span></span>@inbox.ru</span></li>
+													</ul>
+												</div>
+											</div>
+											<div class="field-wrap field-wrap-select field-wrap-connect">
+												<label for="connect">Способ связи</label>
+												<div class="select-wrapper" data-opened="0">
+													<select name="connect">
+														<option value="" selected>Выбрать вариант</option>
+														<option value="Электронная почта">Электронная почта</option>
+														<option value="Телефония">Телефония</option>
+													</select>
+													<div class="selected-item selected-item-placeholder">
+														<span>Способ связи</span>
+													</div>
+													<div class="select-items">
+														<ul>
+															<li data-value="">
+																<span class="option-label">Выбрать вариант</span>
+															</li>
+															<li data-value="Электронная почта">
+																<span class="option-label">Электронная почта</span>
+															</li>
+															<li data-value="Телефония">
+																<span class="option-label">Телефония</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="field-wrap field-wrap-comments">
+												<label for="comments">Комментарий</label>
+												<textarea placeholder="Комментарий" data-placeholder_blur="Комментарий" data-placeholder_focus="Введите ваш комментарий" name="comments" id="comments" autocapitalize="off" autocomplete="off"></textarea>
+												<span class="field-error-text">Введите ваш комментарий</span>
+											</div>
+										</div>
+									</div>
+									<div class="agree-wrap">
+										<div class="agree-checkbox">
+											<div class="checkbox checked">
+												<input type="checkbox" value="Согласен" name="agree" checked />
+											</div>
+										</div>
+										<div class="agree-label">
+											<span class="agree-label-title">Да, я принимаю политику конфиденциальности.</span>
+											<span class="agree-label-description">Мы очень серьезно относимся к зачите данных. Мы заверяем вас, чтомы будем обрабатывать ваши регистрационные данные надежно, обращаться с ними конфидециальнои не будем передавать их третьим лицам. Вы можете посмотреть нашу полную политику конфиденциальности <a href="#">здесь</a>.</span>
+										</div>
+									</div>
+									<div class="submit-wrap">
+										<button type="submit" class="btn-button btn-blue btn-submit"><span>Отправить запрос</span></button>
+									</div>
+									<input type="hidden" value="Заказать звонок" name="subject" />
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="contacts-column contacts-column-text">
+						<h2 class="contacts-form-title">Связаться с нами</h2>
+						<div class="contacts-form-notes">Если вы готовы начать, используйте форму ниже и расскажите нам о своем проекте.</div>
+						<div class="contacts-text-items">
+							<div class="contacts-text-item">
+								<h3 class="contacts-text-item-title">Москва</h3>
+								<div class="contacts-text-item-txt">
+									<p><b>Адрес:</b> 115088, г. Москва,<br /> ул. Шарикоподшипниковская 13</p>
+									<p><b>График работы:</b> Пн–Вс <span class="nowrap">09:00–18:00</span></p>
+									<p>Сейчас в офисе 09:00. Мы открыты.</p>
+									<p><b>Почта для связи:</b> <a href="mailto:info@nslogistic.ru">info@nslogistic.ru</a></p>
+									<p><b>Телефон для связи:</b> <span class="nowrap">+7(812)333-33-23</span></p>
+								</div>
+							</div>
+							<div class="contacts-text-item">
+								<h3 class="contacts-text-item-title">Cанкт-Петербург</h3>
+								<div class="contacts-text-item-txt">
+									<p><b>Адрес:</b> 198097, г. Санкт-Петербург,<br /> ул. Возрождения,д.4, корп.2, лит. А</p>
+									<p><b>График работы:</b> Пн–Вс: <span class="nowrap">09:00–18:00</span></p>
+									<p>Сейчас в офисе 19:30. Мы закрыты.</p>
+									<p><b>Почта для связи:</b> <a href="mailto:info@nslogistic.ru">info@nslogistic.ru</a></p>
+									<p><b>Телефон для связи:</b> <span class="nowrap">+7(812)333-33-23</span></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer id="footer">
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul>
+						<li><a href="#">Breadcrumb 1</a></li>
+						<li><a href="#">Breadcrumb 2</a></li>
+						<li><span>Breadcrumb 3</span></li>
+					</ul>
+				</div>
+				<div class="menu-columns">
+					<div class="menu-column menu-column-about">
+						<div class="menu-column-list">
+							<span class="menu-column-list-name">
+								<span>О компании Northstar</span>
+								<i class="menu-column-list-more"><span>+</span></i>
+							</span>
+							<ul>
+								<li><a href="#">О нас</a></li>
+								<li><a href="#">Руководство</a></li>
+								<li><a href="#">Отзывы клиентов</a></li>
+								<li><a href="#">Документы</a></li>
+								<li><a href="#">Борьба с коррупцией</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu-column menu-column-services">
+						<div class="menu-column-list">
+							<span class="menu-column-list-name">
+								<span>Наши услуги</span>
+								<i class="menu-column-list-more"><span>+</span></i>
+							</span>
+							<ul>
+								<li><a href="#">Автомобильные</a></li>
+								<li><a href="#">Морские</a></li>
+								<li><a href="#">Железнодорожные</a></li>
+								<li><a href="#">Авиа</a></li>
+								<li><a href="#">Мультимодальные</a></li>
+								<li><a href="#">Складские услуги</a></li>
+								<li><a href="#">Таможеные услуги</a></li>
+								<li><a href="#">Контрактная логистика</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu-column menu-column-industries">
+						<div class="menu-column-list">
+							<span class="menu-column-list-name">
+								<span>Отраслевые решения</span>
+								<i class="menu-column-list-more"><span>+</span></i>
+							</span>
+							<ul>
+								<li><a href="#">Нефтегазовая отрасль</a></li>
+								<li><a href="#">Аэрокосмическая отрасль</a></li>
+								<li><a href="#">Автомобильная отрасль</a></li>
+								<li><a href="#">Химическая отрасль</a></li>
+								<li><a href="#">Машиностроительная отрасль</a></li>
+								<li><a href="#">Розничная торговля</a></li>
+								<li><a href="#">Энергетическая отрасль</a></li>
+								<li><a href="#">Фармацевтическая отрасль</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu-column menu-column-news">
+						<div class="menu-column-list">
+							<span class="menu-column-list-name">
+								<span>Пресс-центр</span>
+								<i class="menu-column-list-more"><span>+</span></i>
+							</span>
+							<ul>
+								<li><a href="#">Новости компании</a></li>
+								<li><a href="#">Новости рынка</a></li>
+								<li><a href="#">Реализованные проекты</a></li>
+							</ul>
+						</div>
+						<div class="menu-column-list">
+							<span class="menu-column-list-name">
+								<span>Карьера</span>
+								<i class="menu-column-list-more"><span>+</span></i>
+							</span>
+							<ul>
+								<li><a href="#">Вакансии</a></li>
+								<li><a href="#">Стажировка</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu-column menu-column-contacts">
+						<div class="menu-column-list">
+							<span class="menu-column-list-name">
+								<span>Контакты</span>
+								<i class="menu-column-list-more"><span>+</span></i>
+							</span>
+							<ul>
+								<li><a href="#">Контактная информация</a></li>
+								<li><a href="#">Связаться с нами</a></li>
+							</ul>
+						</div>
+						<div class="menu-column-list menu-column-list-blue">
+							<span class="menu-column-list-name">
+								<span>Связаться с нами</span>
+								<i class="menu-column-list-more"><span>+</span></i>
+							</span>
+							<ul>
+								<li><a href="tel:88005557778">8 800 555 77 78</a></li>
+								<li><a href="mailto:info@nslogistic.ru">info@nslogistic.ru</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="notice">
+					<p>ООО «Нордстар» <span class="blue">использует файлы «cookie»</span>, с целью персонализации сервисов и повышения удобства пользования веб-сайтом. “Cookie” представляют собой небольшие файлы, содержащие информацию о предыдущих посещениях веб-сайта. Если вы не хотите использовать файлы “cookie”, измените настройки браузера.</p>
+				</div>
+				<div class="info">
+					<div class="copyright">
+						<span class="nowrap">2011 - 2020,</span> <span class="nowrap">ООО «Нордстар»</span>, официальный сайт. Все права защищены.
+					</div>
+					<div class="social">
+						<ul>
+							<li>
+								<a href="#" rel="nofollow" target="_blank">
+									<i class="fb"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" rel="nofollow" target="_blank">
+									<i class="tw"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" rel="nofollow" target="_blank">
+									<i class="yt"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" rel="nofollow" target="_blank">
+									<i class="in"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<!--
+	<div style="display: none;">
+		<div class="box-modal" id="Modal-copyright">
+			<div class="box-modal_close arcticmodal-close"></div>
+			<div class="modal-copyright">
+				<div class="zag">Политика конфиденциальности</div>
+				<p>Администрация данной посадочной страницы (Лэндинг) не может передать или раскрыть информацию предоставленную пользователем (далее Пользователь) при регистрации и использовании функций сайта третьим лицам, кроме случаев, описанных законодательством страны, на территории которой пользователь ведет свою деятельность.</p>
+				<p>Для регистрации на посадочной странице, пользователь обязан внести некоторую персональную информацию. Для проверки предоставленных данных, посадочная страница оставляет за собой право потребовать доказательства идентичности в онлайн или офлайн режимах.</p>
+				<p>Лэндинг прилагает все усилия для сбережения в сохранности личных данных Пользователя. Личная информация может быть раскрыта в случаях, описанных законодательством, либо когда администрация сочтет подобные действия необходимыми для соблюдения юридической процедуры, судебного распоряжения или легального процесса необходимого для работы Пользователя с Лэндингом. В других случаях, ни при каких условиях, информация, которую Пользователь передает Лэндингу, не будет раскрыта третьим лицам.</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	-->
+
+	<!-- Скрипты -->
+	<script type="text/javascript" src="js/vendors/jquery.min.js"></script>
+	<script type="text/javascript" src="js/vendors/jquery.throttle-debounce.min.js"></script>
+	<script type="text/javascript" src="js/vendors/arcticmodal.js"></script>
+	<script type="text/javascript" src="js/vendors/basictable.js"></script>
+	<script type="text/javascript" src="js/vendors/cookie.js"></script>
+	<script type="text/javascript" src="js/vendors/fancybox.js"></script>
+	<script type="text/javascript" src="js/vendors/form.js"></script>
+	<script type="text/javascript" src="js/vendors/lazysizes.js"></script>
+	<script type="text/javascript" src="js/vendors/owl.js"></script>
+	<script type="text/javascript" src="js/vendors/placeholder.js"></script>
+	<script type="text/javascript" src="js/vendors/render.js"></script>
+	<script type="text/javascript" src="js/vendors/hyphen.js"></script>
+	<script type="text/javascript" src="js/vendors/viewport.js"></script>
+	<script type="text/javascript" src="js/vendors/scroll-magic.js"></script>
+	<script type="text/javascript" src="js/vendors/tooltipster.js"></script>
+	<script type="text/javascript" src="js/vendors/moment.min.js"></script>
+	<script type="text/javascript" src="js/vendors/daterangepicker.js"></script>
+	<script type="text/javascript" src="js/vendors.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+</html>

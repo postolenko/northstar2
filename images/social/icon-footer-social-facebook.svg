@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M13.35 2H2.65C2.29326 2.00537 2.00537 2.29326 2 2.65V13.35C2.00537 13.7067 2.29326 13.9946 2.65 14H8.4V9.35H6.85V7.55H8.4V6.2C8.4 4.65 9.35 3.8 10.75 3.8C11.4 3.8 12 3.85 12.15 3.85V5.5H11.2C10.45 5.5 10.3 5.85 10.3 6.4V7.55H12.1L11.85 9.35H10.3V14H13.35C13.7067 13.9946 13.9946 13.7067 14 13.35V2.65C13.9946 2.29326 13.7067 2.00537 13.35 2Z"/>
+	<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="12" height="12">
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M13.35 2H2.65C2.29326 2.00537 2.00537 2.29326 2 2.65V13.35C2.00537 13.7067 2.29326 13.9946 2.65 14H8.4V9.35H6.85V7.55H8.4V6.2C8.4 4.65 9.35 3.8 10.75 3.8C11.4 3.8 12 3.85 12.15 3.85V5.5H11.2C10.45 5.5 10.3 5.85 10.3 6.4V7.55H12.1L11.85 9.35H10.3V14H13.35C13.7067 13.9946 13.9946 13.7067 14 13.35V2.65C13.9946 2.29326 13.7067 2.00537 13.35 2Z" fill="white"/>
+	</mask>
+	<g mask="url(#mask0)"></g>
+	<style>
+		svg {
+			cursor: pointer;
+		}
+		svg path {
+			fill: #86868B;
+		}
+	</style>
+</svg>
