@@ -5894,3 +5894,155 @@ p.blue_count {
 }
 
 /*-- /Section 2 - About Company Testimonial --*/
+
+/*-- Section 1 - Documentation --*/
+
+#subheader.grey_header .background {
+	background: #f5f5f7;
+}
+
+.documents_sect {
+    padding: 40px 0 109px 0;
+}
+
+.documents_wrapp {
+	padding: 18px 0;
+}
+
+.documents_title {
+	padding: 20px 0;
+	text-align: center;
+}
+
+.documents_title h2 {
+	padding: 5px 0;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 120%;
+	color: #2B2B2B;
+}
+
+.documents_title p {
+	padding: 5px 0;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 140%;
+	color: #000000;
+}
+
+.documents_thumbnails {
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	margin: 0 -25px;
+}
+
+.document_thumb {
+	display: block;
+	width: calc(33.33% - 50px);
+	margin: 13px 25px;
+	background: #FFFFFF;
+	text-decoration: none;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	min-height: 350px;
+	overflow: hidden;
+	-webkit-transition-property: box-shadow;
+	-webkit-transition-duration: .3s;
+	-webkit-transition-timing-function: ease;
+	-moz-transition-property: box-shadow;
+	-moz-transition-duration: .3s;
+	-moz-transition-timing-function: ease;
+	-ms-transition-property: box-shadow;
+	-ms-transition-duration: .3s;
+	-ms-transition-timing-function: ease;
+	-o-transition-property: box-shadow;
+	-o-transition-duration: .3s;
+	-o-transition-timing-function: ease;
+	transition-property: box-shadow;
+	transition-duration: .3s;
+	transition-timing-function: ease;
+}
+
+.document_thumb:hover {
+	-webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,.5);
+	-moz-box-shadow: 0 0 15px 0 rgba(0,0,0,.5);
+	box-shadow: 0 0 15px 0 rgba(0,0,0,.5);
+}
+
+.document_thumb .icon_box {
+	height: 213px;
+	background-color: #2B2B2B;
+	position: relative;
+	background-image: url(../images/documents.svg);
+	background-size: auto;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.document_thumb .icon_box img {
+	display: block;
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.document_thumb .descript {
+    padding: 29px 10% 10px 10%;
+	text-align: center;
+}
+
+.document_thumb .thumb_title_wrapp {
+	min-height: 52px;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+}
+
+.document_thumb .descript h3 {
+	width: 100%;
+	padding: 0;
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 120%;
+	color: #000000;
+}
+
+.document_thumb .descript p {
+	padding: 12px 0 5px 0;
+}
+
+.document_thumb .descript .blue_p {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #0071E3;
+}
+
+.document_thumb .descript p .blue_arrow {
+	position: relative;
+	top: 7px;
+}
+
+.blue_arrow {
+	display: inline-block;
+	vertical-align: top;
+	width: 14px;
+	height: 12px;
+	background-image: url(../images/blue_arrow.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+/*-- /Section 1 - Documentation --*/
