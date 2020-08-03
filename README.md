@@ -5,3 +5,5 @@
 # http://postolenko.github.io/northstar2/documentation.html
 # http://postolenko.github.io/northstar2/account_enter.html
 # http://postolenko.github.io/northstar2/vacansies.html
+# http://postolenko.github.io/northstar2/vacansie_single.html
+# http://postolenko.github.io/northstar2/conf_politic.html

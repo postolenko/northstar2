@@ -6443,3 +6443,240 @@ p.date {
 }
 
 /*-- /Section 1 - Vacansies --*/
+
+/*-- Section 1 - Vacansie Single --*/
+
+.services_items {
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.service_article_2 {
+	padding-bottom: 58px;
+}
+
+.service_article_2 h2 {
+	padding: 13px 0;
+}
+
+.service_article_2 p {
+	padding: 0;
+}
+
+.service_item {
+
+}
+
+.service_item ul {
+
+}
+
+.service_item ul li {
+
+}
+
+.service_item ul li ul {
+
+}
+
+.service_item ul li ul li {
+	position: relative;
+	list-style: none;
+}
+
+.service_item ul li ul li:before {
+	content: "";
+	width: 5px;
+	height: 1px;
+	background: #000000;
+	position: absolute;
+	top: 12px;
+	left: -17px;
+}
+
+/*-- /Section 1 - Vacansie Single --*/
+
+/*-- Section 2 - Vacansie Single --*/
+
+.vacansie_form_wrapp {
+	max-width: 562px;
+	margin: 50px auto 59px auto;
+}
+
+.vacansie_form_header {
+    padding: 9px 0;
+    text-align: center;
+}
+
+.vacansie_form_header h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+    color: #000000;
+}
+
+/*-- /Section 2 - Vacansie Single --*/
+
+
+
+
+
+
+/*-- Popup --*/
+
+body.fixed {
+    width: 100%;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+.popup {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99998;
+}
+
+.popup_bg {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 9999;
+}
+
+.close_popup {
+    display: block;
+    width: 25px;
+    height: 25px;
+    outline: 1px solid transparent;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+    background-image: url(../images/close_popup.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.popup_content {
+	max-width: 854px;
+	margin: 40px auto;
+	padding: 63px 150px 65px 150px;
+	background: #FFFFFF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	position: relative;
+	z-index: 2;
+}
+
+.popup_content .close_popup {
+	position: absolute;
+	top: 6px;
+	right: 11px;
+}
+
+.popup_header {
+	padding: 9px 0;
+	text-align: center;
+}
+
+.popup_header h2 {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 120%;
+	color: #000000;
+}
+
+.upload_file_box {
+	width: 100%;
+	margin: 15px 15px 0px 15px;
+	padding: 16px;    
+	text-align: center;
+	border: 1px dashed #979797;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.upload_file_box p {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #7E7E7E;
+}
+
+.upload_file_box p .blue_link {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+label.upload_file {
+	opacity: 1;
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #0071E3;
+	text-decoration: none;
+	opacity: 1 !important;
+	position: relative;
+	top: 0;
+	left: 0;
+	border: 1px solid transparent;
+	-webkit-transition-property: border-bottom;
+	-webkit-transition-duration: .3s;
+	-webkit-transition-timing-function: ease;
+	-moz-transition-property: border-bottom;
+	-moz-transition-duration: .3s;
+	-moz-transition-timing-function: ease;
+	-ms-transition-property: border-bottom;
+	-ms-transition-duration: .3s;
+	-ms-transition-timing-function: ease;
+	-o-transition-property: border-bottom;
+	-o-transition-duration: .3s;
+	-o-transition-timing-function: ease;
+	transition-property: border-bottom;
+	transition-duration: .3s;
+	transition-timing-function: ease;
+}
+
+label.upload_file:link,
+label.upload_file:visited {
+	border-bottom: 1px solid transparent;
+}
+
+label.upload_file:active,
+label.upload_file.active {
+	border-bottom: 1px solid #0071E3;
+}
+
+label.upload_file:hover {
+	border-bottom: 1px solid #0071E3;
+}
+
+.upload_file input {
+	opacity: 0;
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+}
+
+.submit-wrap_2 .btn-submit {
+	width: 100%;
+}
+
+/*-- /Popup --*/
