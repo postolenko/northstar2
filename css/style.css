@@ -6046,3 +6046,400 @@ p.blue_count {
 }
 
 /*-- /Section 1 - Documentation --*/
+
+/*-- Section 1 - Account Enter --*/
+
+.account_form_sect {
+	min-height: 100vh;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+}
+
+.account_form_sect > div {
+	width: 100%;
+}
+
+.account_form_wrapp {
+	max-width: 325px;
+	margin: 0 auto;
+}
+
+.account_form_title {
+	padding: 4px 0;
+	text-align: center;
+}
+
+.account_form_title h3 {
+	padding: 7px 0;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 34px;
+	color: #2B2B2B;
+}
+
+.account_icon {
+	display: block;
+	width: 68px;
+	height: 68px;
+	background-image: url(../images/account_icon.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.account_form_title .account_icon {
+	margin: 0 auto;
+}
+
+.account_form {
+	display: flex;
+	display: -webkit-flex;
+	height: 44px;
+	max-width: 330px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border: 1px solid #D6D6D6;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+.account_form > div:nth-child(1) {
+	width: calc(100% - 50px);
+}
+
+.account_form > div:nth-child(2) {
+	width: 50px;
+}
+
+.account_form input {
+	height: 43px;
+	padding: 0 0 0 20px;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 41px;
+	color: #7E7E7E;
+	border: 1px solid transparent;
+	outline: 1px solid transparent;
+}
+
+.arrov_sub {
+	height: 41px;
+	width: 50px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	background-color: transparent;
+	background-image: url(../images/account_form_arrow.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.account_form_footer {
+	max-width: 180px;
+	margin: 52px auto;
+	text-align: center;
+}
+
+.checkbox_wrapp {
+	display: inline-block;
+	vertical-align: top;
+	padding: 8px 4px 8px 0;
+	border-bottom: 1px solid #D2D2D2;
+}
+
+.checkbox_wrapp label {
+	display: inline-block;
+	vertical-align: top;
+	cursor: pointer;
+	padding-left: 34px;
+	position: relative;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	color: #2B2B2B;
+}
+
+.checkbox_wrapp label input {
+	display: block;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	background-color: #FFFFFF;
+	border: 1px solid #D6D6D6;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	outline: 1px solid transparent;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.checkbox_wrapp label input:checked {
+	border: 1px solid #0071E3;
+	background-color: #0071E3;
+	background-repeat: no-repeat;
+	background-image: url(../images/icon-input-checkbox.svg);
+	background-position: center;
+}
+
+.text_wrapp {
+
+}
+
+.text_wrapp p {
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 23px;
+	color: #2B2B2B;
+}
+
+.blue_link {
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 23px;
+	color: #0071E3;
+	text-decoration: none;
+	border: 1px solid transparent;
+	-webkit-transition-property: border-bottom;
+	-webkit-transition-duration: .3s;
+	-webkit-transition-timing-function: ease;
+	-moz-transition-property: border-bottom;
+	-moz-transition-duration: .3s;
+	-moz-transition-timing-function: ease;
+	-ms-transition-property: border-bottom;
+	-ms-transition-duration: .3s;
+	-ms-transition-timing-function: ease;
+	-o-transition-property: border-bottom;
+	-o-transition-duration: .3s;
+	-o-transition-timing-function: ease;
+	transition-property: border-bottom;
+	transition-duration: .3s;
+	transition-timing-function: ease;
+}
+
+.blue_link:link,
+.blue_link:visited {
+	border-bottom: 1px solid transparent;
+}
+
+.blue_link:active,
+.blue_link.active {
+	border-bottom: 1px solid #0071E3;
+}
+
+.blue_link:hover {
+	border-bottom: 1px solid #0071E3;
+}
+
+/*-- /Section 1 - Account Enter --*/
+
+/*-- Section 1 - Vacansies --*/
+
+.vacansies_wrapp {
+	padding: 64px 0 53px 0;
+}
+
+.vacansies_title {
+    padding: 5px 0;
+}
+
+.vacansies_title h2 {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 120%;
+	color: #000000;
+}
+
+.vacansie_dropdown {
+	border-top: 1px solid #D2D2D2;
+}
+
+.vacansie_header {
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	padding: 21px 0 18px 0;
+	position: relative;
+}
+
+.vacansie_header > div:nth-child(1) {
+	width: calc(100% - 240px);
+}
+
+.vacansie_header > div:nth-child(2) {
+	width: 240px;
+}
+
+.vacansie_header h3 {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 120%;
+	color: #0071E3;
+}
+
+.vacansie_header p {
+	padding-bottom: 4px;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 140%;
+	color: #000000;
+}
+
+p.date {
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
+	color: #515154;
+}
+
+.dropdown_btn {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	background-color: transparent;
+	background-image: url(../images/close.svg);
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: center;
+	outline: 1px solid transparent;
+	-webkit-transition-property: transform;
+	-webkit-transition-duration: .3s;
+	-webkit-transition-timing-function: ease;
+	-moz-transition-property: transform;
+	-moz-transition-duration: .3s;
+	-moz-transition-timing-function: ease;
+	-ms-transition-property: transform;
+	-ms-transition-duration: .3s;
+	-ms-transition-timing-function: ease;
+	-o-transition-property: transform;
+	-o-transition-duration: .3s;
+	-o-transition-timing-function: ease;
+	transition-property: transform;
+	transition-duration: .3s;
+	transition-timing-function: ease;
+}
+
+.vacansie_dropdown.active .dropdown_btn {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.vacansie_header .dropdown_btn {
+	margin-top: -13px;
+	position: absolute;
+	top: 50%;
+	right: 0;
+}
+
+.vacansie_contet {
+	display: none;
+}
+
+/*.vacansie_dropdown.active .vacansie_contet {
+	display: block;
+}*/
+
+.btn_blue_2 {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	padding: 11px 25px 12px 25px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 16px;
+	color: #FFFFFF;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: #0071E3;
+	-webkit-transition-property: background;
+	-webkit-transition-duration: .3s;
+	-webkit-transition-timing-function: ease;
+	-moz-transition-property: background;
+	-moz-transition-duration: .3s;
+	-moz-transition-timing-function: ease;
+	-ms-transition-property: background;
+	-ms-transition-duration: .3s;
+	-ms-transition-timing-function: ease;
+	-o-transition-property: background;
+	-o-transition-duration: .3s;
+	-o-transition-timing-function: ease;
+	transition-property: background;
+	transition-duration: .3s;
+	transition-timing-function: ease;
+}
+
+.btn_blue_2:link,
+.btn_blue_2:visited {
+	background: #0071E3;
+}
+
+.btn_blue_2:active,
+.btn_blue_2.active {
+	background: #004F9F;
+}
+
+.btn_blue_2:hover {
+	background: #004F9F;
+}
+
+.vacansie_contet p {
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 140%;
+	color: #000000;
+}
+
+.vacansie_contet .btn_blue_2 {
+    margin: 38px 10px 29px 10px;
+}
+
+.send_resume_box {
+	margin: 21px 0;
+	padding: 24px 20px 27px 20px;
+	text-align: center;
+	background: #FAFAFA;
+}
+
+.send_resume_box .inner {
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+.send_resume_box h3 {
+	padding: 4px 0;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 120%;
+	color: #000000;
+}
+
+.send_resume_box p {
+	padding: 3px 0;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 140%;
+	text-align: center;
+	color: #000000;
+}
+
+.send_resume_box .blue_link {
+	font-size: 17px;
+	line-height: 24px;
+}
+
+.link_p .blue_arrow {
+	position: relative;
+	top: 8px;
+}
+
+/*-- /Section 1 - Vacansies --*/

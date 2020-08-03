@@ -1444,4 +1444,27 @@ $(document).ready(function() {
 		$wrapper.find('.col-tab:eq('+$item.index()+')').addClass('col-tab-active');
 	});
 
+	// ----------
+
+	$(".vacansie_dropdown").each(function() {
+		if($(this).hasClass("active")) {
+			$(this).find(".vacansie_contet").css({
+				"display" : "block"
+			});
+		}
+	});
+
+	$(".dropdown_btn").on("click", function(e) {
+		e.preventDefault();
+		var parentBlock = $(this).closest(".vacansie_dropdown");
+		var dropdownContent = parentBlock.find(".vacansie_contet");
+		if(dropdownContent.is(":hidden")) {
+			dropdownContent.slideDown(300);
+			parentBlock.addClass("active");
+		} else {
+			dropdownContent.slideUp(300);
+			parentBlock.removeClass("active");
+		}
+	});
+
 });
