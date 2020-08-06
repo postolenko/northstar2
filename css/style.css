@@ -5514,6 +5514,77 @@ background: rgba(0, 0, 0, 0.3);
 	background: #F3F3F4;
 }
 
+.menu_3_wrapp .mCSB_draggerContainer {
+	display: none;
+}
+
+.menu_3_wrapp .mCSB_horizontal.mCSB_inside>.mCSB_container {
+    margin-bottom: 0;
+}
+
+.mCSB_buttonLeft,
+.mCSB_buttonRight {
+	/*outline: 1px solid red;*/
+	position: relative;
+}
+
+.menu_3_wrapp .mCSB_buttonLeft {
+	background-repeat: no-repeat;
+	background-image: url(../images/prev.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 20px;
+	background-color: #F3F3F4 !important;
+	height: 108px !important;
+	width: 35px !important;
+	top: -93px;
+	z-index: 2;
+}
+
+.menu_3_wrapp .mCSB_buttonLeft:before {
+	display: block;
+	content: "";
+	width: 1px;
+	height: 90px;
+	background-color: #d2d2d7;
+	position: absolute;
+	top: 9px;
+	right: 0;
+}
+
+.menu_3_wrapp .mCSB_buttonRight {
+	background-color: #F3F3F4 !important;
+	background-repeat: no-repeat;
+	background-image: url(../images/next.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 20px;
+	height: 108px !important;
+	width: 35px !important;
+	top: -93px;
+	z-index: 2;
+}
+
+.menu_3_wrapp .mCSB_buttonRight:before {
+	display: block;
+	content: "";
+	width: 1px;
+	height: 90px;
+	background-color: #d2d2d7;
+	position: absolute;
+	top: 9px;
+	left: 0;
+}
+
+.menu_3_wrapp .mCSB_buttonLeft:hover,
+.menu_3_wrapp .mCSB_buttonRight:hover {
+	opacity: 1 !important;
+}
+
+.mCSB_scrollTools .mCSB_buttonDown, .mCSB_scrollTools .mCSB_buttonLeft, .mCSB_scrollTools .mCSB_buttonRight, .mCSB_scrollTools .mCSB_buttonUp {
+    opacity: .8;
+}
+
 .container {
 
 }
@@ -5523,6 +5594,8 @@ background: rgba(0, 0, 0, 0.3);
 	display: -webkit-flex;
 	justify-content: stretch;
 	-webkit-justify-content: stretch;
+	width: 1190px;
+	margin: 0 auto;
 	padding: 9px 0 14px 0;
 }
 
@@ -5604,8 +5677,8 @@ background: rgba(0, 0, 0, 0.3);
 
 .icon_03 {
 	display: block;
-	width: 49px;
-	height: 47px;
+	width: 43px;
+	height: 41px;
 	background-image: url(../images/nav_icons/icon_03.svg);
 	background-repeat: no-repeat;
 	background-position: center;

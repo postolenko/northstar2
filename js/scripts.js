@@ -1,3 +1,15 @@
+$(window).on('load', function() {	
+	$(".menu_3_scrollbar").mCustomScrollbar({
+		axis:"x",
+		scrollButtons:{ /*scroll buttons*/
+			enable: true, /*scroll buttons support: boolean*/
+			scrollType: "continuous",
+			scrollSpeed: 20, /*scroll buttons continuous scrolling speed: integer*/
+			scrollAmount: 40 /*scroll buttons pixels scroll amount: integer (pixels)*/
+		}
+	});
+});
+
 $(document).ready(function() {
 
 	// Будет нужно на WordPress (а здесь чтобы не было ошибки)
