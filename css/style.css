@@ -6016,6 +6016,35 @@ background: rgba(0, 0, 0, 0.3);
 	font-size: 12px;
 	line-height: 120%;
 	color: #FFFFFF;
+	-webkit-transition-property: color;
+	-webkit-transition-duration: .3s;
+	-webkit-transition-timing-function: ease;
+	-moz-transition-property: color;
+	-moz-transition-duration: .3s;
+	-moz-transition-timing-function: ease;
+	-ms-transition-property: color;
+	-ms-transition-duration: .3s;
+	-ms-transition-timing-function: ease;
+	-o-transition-property: color;
+	-o-transition-duration: .3s;
+	-o-transition-timing-function: ease;
+	transition-property: color;
+	transition-duration: .3s;
+	transition-timing-function: ease;
+}
+
+.menu_2 ul li a:link,
+.menu_2 ul li a:visited {
+	color: #FFFFFF;
+}
+
+.menu_2 ul li a:active,
+.menu_2 ul li a.active {
+	color: #0071E3;
+}
+
+.menu_2 ul li a:hover {
+	color: #0071E3;
 }
 
 .fixed_nav.fixed .menu_2 ul li a {
