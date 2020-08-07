@@ -22,3 +22,12 @@
 # http://postolenko.github.io/northstar2/services_07.html
 # http://postolenko.github.io/northstar2/services_08.html
 # http://postolenko.github.io/northstar2/service.html
+# http://postolenko.github.io/northstar2/article-single-preview.html
+# http://postolenko.github.io/northstar2/article-single.html
+# http://postolenko.github.io/northstar2/article.html
+# http://postolenko.github.io/northstar2/contacts.html
+# http://postolenko.github.io/northstar2/index.html
+# http://postolenko.github.io/northstar2/person-single.html
+# http://postolenko.github.io/northstar2/person.html
+# http://postolenko.github.io/northstar2/rekviziti.html
+# http://postolenko.github.io/northstar2/zapros.html
