@@ -1595,5 +1595,23 @@ $(document).ready(function() {
         }
      });
 
+    // ----------
+
+    $("#emailSub").on("click", function(e) {
+    	e.preventDefault();
+    	if($("#emailInput").val().length > 0) {
+			$("#accountForm").addClass("active");
+			$(this).fadeOut(300);
+    	}
+    });
+
+    $("#emailInput").keyup(function() {
+    	if($(this).val().length > 0) {
+    		$("#emailSub").addClass("active");
+    	} else {
+    		$("#emailSub").removeClass("active");
+    	}
+    });
+
 
 });

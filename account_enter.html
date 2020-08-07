@@ -181,12 +181,26 @@
 								<h3>Войти в кабинет клиента</h3>
 							</div>
 							<form>
-								<div class="account_form">
-									<div>
-										<input type="mail" name="" placeholder="Ваш e-mail" required />
+								<div class="account_form_slidedown" id="accountForm">
+									<div class="visible_input_wrapp">
+										<div class="account_form">
+											<div>
+												<input type="mail" id="emailInput" name="" placeholder="Ваш e-mail" required />
+											</div>
+											<div>
+												<button type="button" class="arrov_sub" id="emailSub"></button>
+											</div>
+										</div>
 									</div>
-									<div>
-										<button type="submit" class="arrov_sub"></button>
+									<div class="slide_down_input">
+										<div class="account_form">
+											<div>
+												<input type="password" name="" placeholder="Ваш пароль" required />
+											</div>
+											<div>
+												<button type="submit" class="arrov_sub"></button>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="account_form_footer">
@@ -197,7 +211,7 @@
 										<p><a href="#" class="blue_link">Забыли пароль?</a></p>
 									</div>
 									<div class="text_wrapp">
-										<p>Нет аккаунта?<a href="#" class="blue_link">Создайте сейчас</a></p>
+										<p>Нет аккаунта?&nbsp;<a href="#" class="blue_link">Создайте сейчас</a></p>
 									</div>
 								</div>
 							</form>
