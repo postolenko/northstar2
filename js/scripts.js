@@ -1,8 +1,13 @@
 function getfixedNavParams() {
-	if($(document).scrollTop() > $("#header").height() + $("#header").offset().top ) {
-		$(".fixed_nav").addClass("fixed");
+	if($(".fixed_nav").length > 0) {
+		$("#wrapper").addClass("paddingTop");
+		if($(document).scrollTop() > $("#header").height() + $("#header").offset().top ) {
+			$(".fixed_nav").addClass("fixed");
+		} else {
+			$(".fixed_nav").removeClass("fixed");
+		}
 	} else {
-		$(".fixed_nav").removeClass("fixed");
+		$("#wrapper").removeClass("paddingTop");
 	}
 }
 
@@ -1241,46 +1246,50 @@ $(document).ready(function() {
 		});
 	});
 
-	// Календарь
-	var daterangepicker_options = {
-		locale: {
-			format: 'DD.MM.YYYY',
-			separator: ' - ',
-			applyLabel: 'Применить',
-			cancelLabel: 'Отмена',
-			fromLabel: 'От',
-			toLabel: 'До',
-			customRangeLabel: 'Произвольно',
-			weekLabel: 'W',
-			daysOfWeek: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-			monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
-			firstDay: 1
-		},
-		singleDatePicker: true,
-		showDropdowns: false,
-		autoUpdateInput: false,
-		alwaysShowCalendars: true,
-		parentEl: 'body',
-		opens: 'center',
-		buttonClasses: 'btn btn-sm',
-		applyButtonClasses: 'btn-primary',
-		cancelClass: 'btn-default'
-	};
-	var daterangepicker_options_birthday = daterangepicker_options;
-	daterangepicker_options_birthday.showDropdowns = true;
-	daterangepicker_options_birthday.startDate = moment().subtract(18, 'years').format('DD.MM.YYYY');
-	daterangepicker_options_birthday.maxDate = moment().subtract(18, 'years').format('DD.MM.YYYY');
-	$('input[name="birthday"]').daterangepicker(daterangepicker_options_birthday, function(start, end, label) {});
-	var daterangepicker_options_cargo_readiness_date = daterangepicker_options;
-	daterangepicker_options_cargo_readiness_date.minDate = moment().format('DD.MM.YYYY');
-	daterangepicker_options_cargo_readiness_date.maxDate = moment().add(10, 'years').format('DD.MM.YYYY');
-	$('input[name="cargo_readiness_date"]').daterangepicker(daterangepicker_options_cargo_readiness_date, function(start, end, label) {});
-	$('input[name="birthday"], input[name="cargo_readiness_date"]').on('apply.daterangepicker', function(ev, picker) {
-		$(this).val(picker.startDate.format('DD.MM.YYYY'));
-	});
-	$('input[name="birthday"], input[name="cargo_readiness_date"]').on('cancel.daterangepicker', function(ev, picker) {
-		$(this).val('');
-	});
+	if($("[type='date']").length > 0) {
+
+		// Календарь
+		var daterangepicker_options = {
+			locale: {
+				format: 'DD.MM.YYYY',
+				separator: ' - ',
+				applyLabel: 'Применить',
+				cancelLabel: 'Отмена',
+				fromLabel: 'От',
+				toLabel: 'До',
+				customRangeLabel: 'Произвольно',
+				weekLabel: 'W',
+				daysOfWeek: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+				monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+				firstDay: 1
+			},
+			singleDatePicker: true,
+			showDropdowns: false,
+			autoUpdateInput: false,
+			alwaysShowCalendars: true,
+			parentEl: 'body',
+			opens: 'center',
+			buttonClasses: 'btn btn-sm',
+			applyButtonClasses: 'btn-primary',
+			cancelClass: 'btn-default'
+		};
+		var daterangepicker_options_birthday = daterangepicker_options;
+		daterangepicker_options_birthday.showDropdowns = true;
+		daterangepicker_options_birthday.startDate = moment().subtract(18, 'years').format('DD.MM.YYYY');
+		daterangepicker_options_birthday.maxDate = moment().subtract(18, 'years').format('DD.MM.YYYY');
+		$('input[name="birthday"]').daterangepicker(daterangepicker_options_birthday, function(start, end, label) {});
+		var daterangepicker_options_cargo_readiness_date = daterangepicker_options;
+		daterangepicker_options_cargo_readiness_date.minDate = moment().format('DD.MM.YYYY');
+		daterangepicker_options_cargo_readiness_date.maxDate = moment().add(10, 'years').format('DD.MM.YYYY');
+		$('input[name="cargo_readiness_date"]').daterangepicker(daterangepicker_options_cargo_readiness_date, function(start, end, label) {});
+		$('input[name="birthday"], input[name="cargo_readiness_date"]').on('apply.daterangepicker', function(ev, picker) {
+			$(this).val(picker.startDate.format('DD.MM.YYYY'));
+		});
+		$('input[name="birthday"], input[name="cargo_readiness_date"]').on('cancel.daterangepicker', function(ev, picker) {
+			$(this).val('');
+		});
+
+	}
 
 	// Ленивая загрузка изображение
 	window.lazySizesConfig = window.lazySizesConfig || {};

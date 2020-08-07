@@ -9,6 +9,7 @@
 	<link href="css/vendors/arcticmodal.css" type="text/css" rel="stylesheet" media="all" />
 	<link href="css/vendors/fancybox.css" type="text/css" rel="stylesheet" media="all" />
 	<link href="css/vendors/animate.css" type="text/css" rel="stylesheet" media="all" />
+	<link href="css/vendors/jquery.mCustomScrollbar.min.css" type="text/css" rel="stylesheet" media="all" />
 	<link href="css/style.css" type="text/css" rel="stylesheet" media="all" />
 	<link href="css/responsive.css" type="text/css" rel="stylesheet" media="all" />
 </head>
@@ -150,7 +151,7 @@
 		</header>
 
 		<div class="subheader-overlay is_hidden display-none"></div>
-		<div id="subheader" class="sticky">
+		<!-- <div id="subheader" class="sticky">
 			<div class="background"></div>
 			<div class="container">
 				<div class="title">
@@ -173,7 +174,37 @@
 					<i class="menu-mobile-arrow-icon"></i>
 				</div>
 			</div>
-		</div>	
+		</div> -->
+
+		<!-- Fixed Nav -->
+
+		<header class="fixed_nav white_nav">
+			<div class="fixed_nav_inner">
+				<div class="col_1">
+					<div class="title">
+						<h1>
+							<a href="#">
+								<span>Пресс-центр</span>
+							</a>
+						</h1>
+					</div>
+				</div>
+				<div class="col_2">
+					<div class="menu_2" id="menu_2">
+						<div>
+							<ul>
+								<li><a href="#">Реализованные проекты</a></li>
+								<li><a href="#">Новости компании</a></li>
+								<li><a href="#">Новости рынка</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="dropdown_btn_2"></button>
+			</div>
+		</header>
+
+		<!-- /Fixed Nav -->
 
 		<section id="articles" class="articles">
 			<div class="container">
@@ -554,6 +585,8 @@
 
 	</div>
 
+	<div class="resp_bg"></div>
+
 	<!--
 	<div style="display: none;">
 		<div class="box-modal" id="Modal-copyright">
@@ -585,6 +618,7 @@
 	<script type="text/javascript" src="js/vendors/hyphen.js"></script>
 	<script type="text/javascript" src="js/vendors/viewport.js"></script>
 	<script type="text/javascript" src="js/vendors/scroll-magic.js"></script>
+	<script type="text/javascript" src="js/vendors/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script type="text/javascript" src="js/vendors.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 
