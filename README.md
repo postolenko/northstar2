@@ -21,3 +21,4 @@
 # http://postolenko.github.io/northstar2/services_06.html
 # http://postolenko.github.io/northstar2/services_07.html
 # http://postolenko.github.io/northstar2/services_08.html
+# http://postolenko.github.io/northstar2/service.html
