@@ -131,10 +131,10 @@
 	#subheader.menu-active .background {
 		background-color: rgba(255,255,255,1) !important;
 	}
-	#subheader:after {
+/*	#subheader:after {
 		visibility: visible !important;
 		opacity: 1 !important;
-	}
+	}*/
 	#subheader .title {
 		max-width: calc(100% - 38px);
 	}

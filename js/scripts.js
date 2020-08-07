@@ -1585,6 +1585,7 @@ $(document).ready(function() {
     	} else {
     		$("#menu_2").slideDown(300);
     		$(".resp_bg").fadeIn(300);
+    		$(".menu_bg").removeClass("visible");
     	}
     	$(this).toggleClass("active");
     });
@@ -1593,6 +1594,7 @@ $(document).ready(function() {
 		e.preventDefault();
 		$("#menu_2").slideUp(300);
 		$(".resp_bg").fadeOut(300);
+		$(".menu_bg").removeClass("visible");
 		$(".dropdown_btn_2").removeClass("active");
     });
 
@@ -1600,6 +1602,7 @@ $(document).ready(function() {
         if (eventObject.which == 27 ) {
 			$("#menu_2").slideUp(300);
 			$(".resp_bg").fadeOut(300);
+			$(".menu_bg").removeClass("visible");
 			$(".dropdown_btn_2").removeClass("active");
         }
      });
