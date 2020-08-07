@@ -6040,11 +6040,11 @@ background: rgba(0, 0, 0, 0.3);
 
 .menu_2 ul li a:active,
 .menu_2 ul li a.active {
-	color: #0071E3;
+	color: #0071E3 !important;
 }
 
 .menu_2 ul li a:hover {
-	color: #0071E3;
+	color: #0071E3 !important;
 }
 
 .fixed_nav.fixed .menu_2 ul li a {

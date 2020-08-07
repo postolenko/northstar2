@@ -1,13 +1,13 @@
 function getfixedNavParams() {
-	if($(".fixed_nav").length > 0) {
+	if($(".fixed_nav").length > 0 && !$(".fixed_nav").hasClass("transparent")) {
 		$("#wrapper").addClass("paddingTop");
-		if($(document).scrollTop() > $("#header").height() + $("#header").offset().top ) {
-			$(".fixed_nav").addClass("fixed");
-		} else {
-			$(".fixed_nav").removeClass("fixed");
-		}
 	} else {
 		$("#wrapper").removeClass("paddingTop");
+	}
+	if($(document).scrollTop() > $("#header").height() + $("#header").offset().top ) {
+		$(".fixed_nav").addClass("fixed");
+	} else {
+		$(".fixed_nav").removeClass("fixed");
 	}
 }
 

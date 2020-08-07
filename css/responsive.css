@@ -1366,6 +1366,9 @@
 	    font-size: 15px;
 	    color: #2B2B2B;
 	}
+	.menu_2 ul li a:link, .menu_2 ul li a:visited {
+	    color: #2B2B2B;
+	}
 	.menu_2 ul li.blue_pill {
 	    padding: 5px 0;
 	}
