@@ -1,6 +1,5 @@
 function getfixedNavParams() {
 	if($(document).scrollTop() > $("#header").height() + $("#header").offset().top ) {
-		console.log($(document).scrollTop());
 		$(".fixed_nav").addClass("fixed");
 	} else {
 		$(".fixed_nav").removeClass("fixed");

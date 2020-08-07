@@ -6013,7 +6013,7 @@ background: rgba(0, 0, 0, 0.3);
 	border: 1px solid transparent;
 	background-color: transparent;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 20px;
 	background-position: center;
 	background-image: url(../images/down_arrow.svg);
 	outline: 1px solid transparent;
