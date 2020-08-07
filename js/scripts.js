@@ -1572,12 +1572,28 @@ $(document).ready(function() {
     	e.preventDefault();
     	if( $(this).hasClass("active") ) {
     		$("#menu_2").slideUp(300);
+    		$(".resp_bg").fadeOut(300);
     	} else {
     		$("#menu_2").slideDown(300);
+    		$(".resp_bg").fadeIn(300);
     	}
     	$(this).toggleClass("active");
     });
 
+    $(".resp_bg").on("click", function(e) {
+		e.preventDefault();
+		$("#menu_2").slideUp(300);
+		$(".resp_bg").fadeOut(300);
+		$(".dropdown_btn_2").removeClass("active");
+    });
+
+    $(this).keydown(function(eventObject){
+        if (eventObject.which == 27 ) {
+			$("#menu_2").slideUp(300);
+			$(".resp_bg").fadeOut(300);
+			$(".dropdown_btn_2").removeClass("active");
+        }
+     });
 
 
 });
