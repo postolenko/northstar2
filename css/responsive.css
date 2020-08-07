@@ -184,6 +184,44 @@
 	.promo_image {
 	    height: 560px;
 	}
+	.fixed_nav {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.fixed_nav_inner {
+		max-width: 100%;
+	}
+	.fixed_nav .dropdown_btn_2 {
+		display: block;
+	}
+	.menu_2 {
+		display: none;
+		width: 100%;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background: #fff;
+	}
+	.fixed_nav_inner {
+		display: block;
+	}
+	.fixed_nav_inner .col_1,
+	.fixed_nav_inner .col_2 {
+		width: 100%;
+		display: block;
+		position: relative;
+	}
+	.promo_content h1 {
+	    font-size: 43px;
+	    line-height: 54px;
+	}
+	.promo_content p {
+	    font-size: 25px;
+	    line-height: 32px;
+	}
+	.promo_about_company {
+	    min-height: 620px;
+	}
 }
 @media (min-width: 768px) and (max-width: 1279px) {
 	.article-items .article-item .image {
@@ -690,6 +728,20 @@
 	}
 	.promo_image {
 	    height: 370px;
+	}
+	.promo_content h1 {
+		font-size: 38px;
+		line-height: 48px;
+	}
+	.promo_content p {
+	    font-size: 23px;
+	    line-height: 30px;
+	}
+	.promo_about_company {
+	    min-height: 370px;
+	}
+	.promo_content {
+	    padding: 100px 0 36px 0;
 	}
 }
 @media (max-width: 699px) {
@@ -1227,9 +1279,68 @@
 	}
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1600px) {
+	.promo_about_company {
+	    min-height: 720px;
+	}
+}
+
+@media only screen and (max-width: 1279px) {
 	#subheader .dropdown_menu {
 		margin-top: 10px;
+	}
+	.count_jobs_wrapp {
+	    margin: 70px 0 25px 0;
+	}
+	.count_jobs p {
+	    font-size: 132px;
+	}
+	.count_thumbnail .num {
+	    font-size: 45px;
+	}
+	.count_descript p {
+	    font-size: 28px;
+	}
+	.section_2_testimonial {
+	    padding: 60px 0;
+	}
+	.testimonial_thumb {
+		width: 100%;
+	    min-height: auto;
+	    margin: 20px 0;
+	    padding: 30px 15px 20px 15px;
+	}
+	.testimonial_thumb_title {
+	    min-height: auto;
+	    padding-bottom: 20px;
+	}
+	.testimonial_thumb_title h3 {
+	    font-size: 26px;
+	}
+	.testimonial_thumb_descript {
+		padding-bottom: 20px;
+	    min-height: auto;
+	}
+	.count_rate {
+	    min-height: auto;
+	    padding-bottom: 10px;
+	}
+	.testimonial_thumb_footer {
+	    padding-bottom: 20px;
+	}
+	p.blue_count {
+	    font-size: 51px !important;
+	    line-height: 62px !important;
+	}
+	.document_thumb {
+	    width: calc(50% - 50px);
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.popup_content {
+	    max-width: 640px;
+	    padding: 35px 70px 40px 70px;
 	}
 }
 
@@ -1239,5 +1350,161 @@
 	}
 	#subheader .dropdown_menu_items .col {
 	    padding: 10px 25px;
+	}
+	.count_jobs_wrapp {
+	    margin: 30px 0 25px 0;
+	}
+	.count_jobs p {
+	    font-size: 92px;
+	}
+	.count_thumbnail {
+	    padding: 14px;
+	}
+	.count_thumbnail .descript {
+	    font-size: 18px;
+	}
+	.count_thumbnail .num {
+	    font-size: 36px;
+	}
+	.documents_sect {
+	    padding: 14px 0 55px 0;
+	}
+	.documents_title h2 {
+	    font-size: 30px;
+	    line-height: 120%;
+	}
+	.vacansies_wrapp {
+	    padding: 40px 0;
+	}
+	.vacansies_title h2 {
+	    font-size: 25px;
+	}
+	.vacansie_header h3 {
+	    font-size: 23px;
+	}
+	.vacansie_header > div:nth-child(1) {
+	    width: calc(100% - 180px);
+	}
+	.vacansie_header > div:nth-child(2) {
+	    width: 180px;
+	}
+	.popup_content {
+	    max-width: 480px;
+	    padding: 35px 20px 40px 20px;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.documents_thumbnails {
+	    margin: 0;
+	}
+	.document_thumb {
+	    width: 100%;
+	    margin: 13px 0;
+	}
+	.vacansie_header p {
+	    font-size: 15px;
+	}
+	.vacansie_contet p {
+		font-size: 15px;
+	}
+	.vacansie_contet .btn_blue_2 {
+	    margin: 20px 0;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.count_jobs p {
+	    font-size: 70px;
+	}
+	.count_descript p {
+	    font-size: 22px;
+	}
+	.count_thumbnail {
+	    padding: 9px;
+	}
+	.count_thumbnail .num {
+	    font-size: 31px;
+	}
+	.count_thumbnail .descript {
+	    font-size: 12px;
+	}
+	.vacansie_header {
+	    flex-wrap: wrap;
+	    -webkit-flex-wrap: wrap;
+	}
+	.vacansie_header > div:nth-child(1) {
+	    width: 100%;
+	}
+	.vacansie_header > div:nth-child(2) {
+	    width: 100%;
+	}
+	.vacansie_header .dropdown_btn {
+	    margin-top: 23px;
+	    top: 0;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.promo_content h1 {
+	    font-size: 30px;
+	    line-height: 40px;
+	}
+	.promo_content p {
+	    font-size: 20px;
+	    line-height: 26px;
+	}
+	.about_company_article {
+	    margin: 26px 0 45px 0;
+	}
+	.documents_title h2 {
+	    font-size: 26px;
+	}
+	.documents_title p {
+	    font-size: 15px;
+	}
+	.service_article_2 {
+	    padding-bottom: 40px;
+	}
+	.vacansie_header .dropdown_btn {
+	    margin-top: 1px;
+	}
+	.popup_header h2 {
+	    font-size: 27px;
+	}
+	.vacansie_form_wrapp {
+	    margin: 35px auto 50px auto;
+	}
+	.vacansie_form_header h2 {
+	    font-size: 27px;
+	}
+	.politic_article {
+	    padding: 38px 0;
+	}
+	.politic_article h2 {
+	    font-size: 23px;
+	}
+	.politic_article h3 {
+	    padding-top: 15px;
+	    font-size: 21px;
+	}
+	.politic_article p {
+	    font-size: 15px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.count_thumbnail {
+	    width: 100%;
+	    padding: 3px 0;
+	}
+	.count_thumbnail .num {
+	    font-size: 36px;
+	}
+	.count_thumbnail .descript {
+	    font-size: 18px;
+	}
+	.count_jobs p {
+	    font-size: 47px;
+	}
+	.vacansie_header h3 {
+	    font-size: 21px;
 	}
 }

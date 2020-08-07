@@ -1,3 +1,12 @@
+function getfixedNavParams() {
+	if($(document).scrollTop() > $("#header").height() + $("#header").offset().top ) {
+		console.log($(document).scrollTop());
+		$(".fixed_nav").addClass("fixed");
+	} else {
+		$(".fixed_nav").removeClass("fixed");
+	}
+}
+
 $(window).on('load', function() {	
 	$(".menu_3_scrollbar").mCustomScrollbar({
 		axis:"x",
@@ -10,7 +19,13 @@ $(window).on('load', function() {
 	});
 });
 
+$(document).scroll(function() {
+	getfixedNavParams();
+});
+
 $(document).ready(function() {
+
+	getfixedNavParams();
 
 	// Будет нужно на WordPress (а здесь чтобы не было ошибки)
 	if(typeof(window.wp)==='undefined') {
@@ -1553,5 +1568,17 @@ $(document).ready(function() {
     });
 
     // -------------------
+
+    $(".dropdown_btn_2").on("click", function(e) {
+    	e.preventDefault();
+    	if( $(this).hasClass("active") ) {
+    		$("#menu_2").slideUp(300);
+    	} else {
+    		$("#menu_2").slideDown(300);
+    	}
+    	$(this).toggleClass("active");
+    });
+
+
 
 });
