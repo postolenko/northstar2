@@ -1343,7 +1343,9 @@
 	.menu_2 {
 		display: none;
 		width: 100%;
+		max-height: calc(100vh - 50px);
 		padding: 0 25px;
+		overflow-y: auto;
 		position: absolute;
 		top: 100%;
 		left: 0;
