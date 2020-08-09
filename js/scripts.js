@@ -1611,6 +1611,13 @@ $(document).ready(function() {
         }
      });
 
+    $(".menu-mobile-arrow").on("click", function(e) {
+    	e.preventDefault();
+    	if( !$(this).closest("#subheader").hasClass("active") ) {
+    		$(".menu_bg").removeClass("visible");
+    	}
+    });
+
     // ----------
 
     $("#emailSub").on("click", function(e) {
