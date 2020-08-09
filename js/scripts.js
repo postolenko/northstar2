@@ -1506,9 +1506,6 @@ $(document).ready(function() {
 		}
 	});
 
-	// ------------
-
-
     // ----------
 
     $("[data-popup-link]").on("click", function(e) {

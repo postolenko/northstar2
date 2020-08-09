@@ -6191,20 +6191,12 @@ background: rgba(0, 0, 0, 0.3);
     margin: 104px 0 25px 0;
 }
 
-.count_jobs {
-
-}
-
 .count_jobs p {
 	text-align: center;
 	font-weight: bold;
 	font-size: 200px;
 	line-height: 110%;
 	color: #2B2B2B;
-}
-
-.count_descript {
-
 }
 
 .count_descript p {
@@ -6868,10 +6860,6 @@ p.date {
 	display: none;
 }
 
-/*.vacansie_dropdown.active .vacansie_contet {
-	display: block;
-}*/
-
 .btn_blue_2 {
 	display: inline-block;
 	vertical-align: top;
@@ -6987,22 +6975,6 @@ p.date {
 	padding: 0;
 }
 
-.service_item {
-
-}
-
-.service_item ul {
-
-}
-
-.service_item ul li {
-
-}
-
-.service_item ul li ul {
-
-}
-
 .service_item ul li ul li {
 	position: relative;
 	list-style: none;
@@ -7073,9 +7045,6 @@ p.date {
 
 
 /*-- /Confidencial Politic --*/
-
-
-
 
 /*-- Popup --*/
 
