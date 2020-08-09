@@ -5831,36 +5831,6 @@ background: rgba(0, 0, 0, 0.3);
 
 /*-- Fixed Nav --*/
 
-/*#header.header_grey {
-	background: #333333
-}
-
-.fixed_nav {
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 2;
-	background: transparent !important;
-}
-
-#subheader .menu_2 {
-	max-width: 100%;
-}*/
-
-/*
-#subheader.fixed_nav .container:after {
-    border-bottom: 1px solid #D2D2D2;
-}
-
-#subheader.fixed_nav .menu ul > li > a {
-	color: #fff;
-}
-
-#subheader.fixed_nav .title {
-    color: #fff;
-}*/
-
 .fixed_nav {
 	width: 100%;
 	min-height: 50px;
@@ -5911,27 +5881,34 @@ background: rgba(0, 0, 0, 0.3);
 
 .fixed_nav.fixed {
 	width: 100%;
-	/*background: #131313;*/
 	position: fixed;
 	top: 0;
 	left: 0;
-/*    transition: background-color 0.3s ease-in-out;
-    transition-property: background-color, -webkit-backdrop-filter;
-    transition-property: background-color, backdrop-filter;
-    transition-property: background-color, backdrop-filter, -webkit-backdrop-filter;*/
     backdrop-filter: blur(20px);
 }
 
 .fixed_nav.fixed:before {
-	background: rgba(255, 255, 255, .5);
+	background: rgba(255, 255, 255, .7);
 }
 
 .fixed_nav.fixed.grey_nav:before {
-	background: rgba(250, 250, 250, .5);
+	background: rgba(250, 250, 250, .7);
 }
 
 .fixed_nav.fixed.white_nav:before {
-	background: rgba(255, 255, 255, .5);
+	background: rgba(255, 255, 255, .7);
+}
+
+.firefox .fixed_nav.fixed:before {
+	background: rgba(255, 255, 255, .9);
+}
+
+.firefox .fixed_nav.fixed.grey_nav:before {
+	background: rgba(250, 250, 250, .9);
+}
+
+.firefox .fixed_nav.fixed.white_nav:before {
+	background: rgba(255, 255, 255, .9);
 }
 
 .fixed_nav_inner {

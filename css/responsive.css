@@ -1539,6 +1539,9 @@
 	.politic_article p {
 	    font-size: 15px;
 	}
+	.promo_about_company {
+	    min-height: 640px;
+	}
 }
 
 @media only screen and (max-width: 450px) {

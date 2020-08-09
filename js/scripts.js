@@ -31,6 +31,10 @@ $(document).ready(function() {
 
 	getfixedNavParams();
 
+	if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+		$("body").addClass("firefox");
+	}
+
 	// Будет нужно на WordPress (а здесь чтобы не было ошибки)
 	if(typeof(window.wp)==='undefined') {
 		window.wp = {
